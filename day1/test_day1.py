@@ -3,7 +3,7 @@
 import pytest
 import day1
 
-example1_data = day1.read_data("day1/day1_example1.txt")
+example1_data = day1.read_data("day1_example1.txt")
 
 def test_part1_example1():
     example1_ans = day1.part1(example1_data)

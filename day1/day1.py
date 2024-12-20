@@ -34,9 +34,9 @@ def part2(data):
 
 
 if __name__ == "__main__":
-    example1_data = read_data("day1/day1_example1.txt")
+    example1_data = read_data("day1_example1.txt")
     example1_ans = part1(example1_data)
-    day1_data = read_data("day1/day1.txt")
+    day1_data = read_data("day1.txt")
     day1_ans = part1(day1_data)
     day1_part2_ans = part2(day1_data)
     print(day1_ans)
