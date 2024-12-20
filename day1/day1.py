@@ -4,13 +4,15 @@ Day 1: Historian hysteria
 
 import numpy as np
 
+
 def read_data(filename):
     data = np.loadtxt(filename)
     return data
 
+
 def part1(data):
-    column1 = data[:,0]
-    column2 = data[:,1]
+    column1 = data[:, 0]
+    column2 = data[:, 1]
     sorted1 = np.sort(column1)
     sorted2 = np.sort(column2)
     difference = np.abs(sorted2 - sorted1)
@@ -19,8 +21,8 @@ def part1(data):
 
 
 def part2(data):
-    column1 = data[:,0]
-    column2 = data[:,1]
+    column1 = data[:, 0]
+    column2 = data[:, 1]
     total_sum = 0
     for i in column1:
         count = 0
@@ -30,7 +32,6 @@ def part2(data):
         similarity_score = count * i
         total_sum = total_sum + similarity_score
     return total_sum
-
 
 
 if __name__ == "__main__":
