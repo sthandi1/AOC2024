@@ -42,5 +42,3 @@ if __name__ == "__main__":
     day1_part2_ans = part2(day1_data)
     print(day1_ans)
     print(day1_part2_ans)
-
-uyeqw   ioprt[]\iopty[]\
