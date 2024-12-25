@@ -27,10 +27,7 @@ def part2(filename):
     safe_reports = 0
     with open(filename) as file:
         for line in file:
-            extracted_line = line.rstrip().split()
-            numerical_list = np.zeros(len(extracted_line))
-            for i in range(len(extracted_line)):
-                numerical_list[i] = extracted_line[i]
+            numerical_list = np.array(line.rstrip().split())
             diffs = np.diff(numerical_list)
             positive_diffs = 0
             negative_diffs = 0
